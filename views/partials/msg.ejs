@@ -1,0 +1,11 @@
+<% if ( typeof success != 'undefined' && success.length > 0) {%>
+<div class="alert alert-success alert-dismissible fade show">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <%= success %>
+</div>
+<%}%> <% if (failure.length > 0 ){%>
+<div class="alert alert-danger alert-dismissible fade show">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Danger!</strong> <%=failure%>
+</div>
+<% }%>
